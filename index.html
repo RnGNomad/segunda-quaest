@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quest JavaScript Intermediario</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main class="container">
+        <section class="info">
+            <h1 class="sobre">FICOU COM DÚVIDA? <br>
+                NOS MANDE UMA MENSAGEM!</h1>
+            <p class="sobre-descricao">caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos
+                em contato em menos de 24h.</p>
+        </section>
+
+        <section class="formulario-container">
+            <ul class="formulario">
+                <li class="campo">
+                    <input type="text" id="nome" placeholder="Nome completo *" class="campo-texto vazio">
+                    <p class="campo-valido esconder">campo obrigatório</p>
+                </li>
+
+                <li class="campo">
+                    <input type="text" id="email" placeholder="Email *" class="campo-texto vazio">
+                    <p class="campo-valido esconder">campo obrigatório</p>
+                </li>
+
+                <li class="campo">
+                    <input type="text" id="telefone" placeholder="Telefone *" class="campo-texto vazio">
+                    <p class="campo-valido esconder">campo obrigatório</p>
+                </li>
+
+                <li class="campo">
+                    <input type="text" id="mensagem" placeholder="Mensagem *" class="campo-texto vazio"> 
+                    <p class="campo-valido esconder">campo obrigatório</p>
+                </li>
+
+                <li class="obrigatoriedade">
+                    <h2 class="obrigatorio">*campos obrigatórios</h2>
+                </li>
+
+                <li class="botao">
+                    <button class="enviar" onclick="checarTodosInputs()">Enviar</button>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <script type="text/javascript" src="./src/js/index.js"></script>
+</body>
+
+</html>
